@@ -1,3 +1,0 @@
-﻿^j::
-send 14MsH26PEYzSHaWSjD5jr7lBp7AUgG9gJUZaWezkCzCSZhuJty2l5mvus6OYMWF
-return

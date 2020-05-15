@@ -1,5 +1,15 @@
-Capslock::
+;Overridden Capslock needs to be listed first for this to work
+;ctrl+alt, capslock to unlock, alt+capslock to lock
+!Capslock::
+;Send {Capslock}
 return
+Capslock::return
++Capslock::return
+^Capslock::return
+^+Capslock::return
+
+;#include capslock_eclipse_mod.ahk
+#include capslock_idea_mod.ahk
 
 ;Send window to next Screen
 Capslock & Tab::
@@ -11,10 +21,6 @@ return
 
 Capslock & s::
 Send {Ctrl Down}s{Ctrl Up}
-return
-
-Capslock & a::
-Send {Ctrl Down}a{Ctrl Up}
 return
 
 Capslock & u::
@@ -29,33 +35,38 @@ Capslock & p::
 Send ckrw
 return
 
+Capslock & a::
+Send {Ctrl Down}{a}{Ctrl Up}
+return
+
 Capslock & c::
 Send {Ctrl Down}{c}{Ctrl Up}
 return
 
+Capslock & Enter::
+Send {Ctrl Down}{Enter}{Ctrl Up}
+return
 
 Capslock & r::
-Send {Ctrl Down}{z}{Ctrl Up}
+if (GetKeyState("Shift")){
+  Send {Shift Down}{Ctrl Down}{z}{Ctrl Up}{Shift Up}
+} else{
+  Send {Ctrl Down}{z}{Ctrl Up}
+}
+
 return
 
 Capslock & y::
 Send {Ctrl Down}{y}{Ctrl Up}
 return
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;Shortcut for Eclipse Find in Files
-Capslock & q::
-Send {Shift Down}{Ctrl Down}{r}{Ctrl Up}{Shift Up}
+Capslock & t::
+Send {Ctrl Down}{t}{Ctrl Up}
 return
 
-Capslock & [:: 
-Send {Alt Down}{Left}{Alt Up}
+Capslock & g::
+Send {Ctrl Down}{f}{Ctrl Up}
 return
-
-Capslock & ]::
-Send {Alt Down}{Right}{Alt Up}
-return
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;Delete or Delete Current Line
 Capslock & d::
@@ -182,13 +193,6 @@ Send {Lwin Down}5{LWin Up}
 Return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-Capslock & g::
-if GetKeyState("Shift")
-Send {Ctrl Down}{End}{Ctrl Up}
-else
-Send {Ctrl Down}{Home}{Ctrl Up}
-return
-
 Capslock & e::
 if GetKeyState("Shift")
 Send {Shift Down}{Ctrl Down}{Right}{Ctrl Up}{Shift Up}
@@ -198,7 +202,7 @@ return
 
 Capslock & w::
 if GetKeyState("Shift")
-Send {Shift Down}{Ctrl Down}{Left}{Ctrl Up}{Shift Up}
+Send {Ctrl Down}{w}{Ctrl Up}
 else
 Send {Ctrl Down}{Left}{Ctrl Up}
 return
@@ -249,6 +253,10 @@ if GetKeyState("Shift")
 Send {Shift Down}{Right}{Shift Up}
 else
 Send {Right}
+return
+
+Capslock & MButton::
+Send {Enter}
 return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;SC163::

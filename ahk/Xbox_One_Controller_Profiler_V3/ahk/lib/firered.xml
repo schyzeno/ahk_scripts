@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<game expand="1" name="FireRed" select="1">
+	<DirectInput name="Direct Input" on="1"></DirectInput>
+	<Alt main="1" name="Main" Expand="1">
+		<KeyPress Expand="1" Key="1">
+			<Axis Axis="LThumbY" Expand="1">
+				<Direction Direction="Up"></Direction></Axis></KeyPress>
+		<KeyPress Expand="1" Key="2">
+			<Axis Axis="LThumbY" Expand="1">
+				<Direction Direction="Down"></Direction></Axis></KeyPress>
+		<KeyPress Expand="1" Key="3">
+			<Axis Axis="LThumbX" Expand="1">
+				<Direction Direction="Left"></Direction></Axis></KeyPress>
+		<KeyPress Expand="1" Key="4">
+			<Axis Axis="LThumbX" Expand="1">
+				<Direction Direction="Right"></Direction></Axis></KeyPress>
+		<KeyPress Expand="1" Key="Z">
+			<Button Button="X"></Button></KeyPress>
+		<KeyPress Expand="1" Key="X">
+			<Button Button="B"></Button></KeyPress>
+		<KeyPress Expand="1" Key="A">
+			<Button Button="LeftShoulder"></Button></KeyPress>
+		<KeyPress Expand="1" Key="S">
+			<Button Button="RightShoulder"></Button></KeyPress>
+		<KeyPress Expand="1" Key="Q">
+			<Button Button="Back"></Button></KeyPress>
+		<KeyPress Expand="1" Key="W">
+			<Button Button="Start"></Button></KeyPress>
+		<KeyPress Expand="1" Key="E">
+			<Button Button="A"></Button></KeyPress>
+		<KeyPress Expand="1" Key="R">
+			<Button Button="Y"></Button></KeyPress>
+		<KeyPress Expand="1" Key="+F1">
+			<Button Button="Up"></Button></KeyPress>
+		<KeyPress Expand="1" Key="+F2">
+			<Button Button="Right"></Button></KeyPress>
+		<KeyPress Expand="1" Key="G" select="1">
+			<Trigger Trigger="LTrigger"></Trigger></KeyPress></Alt></game>
