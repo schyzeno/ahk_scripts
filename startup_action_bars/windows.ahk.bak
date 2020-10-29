@@ -188,8 +188,7 @@ return
 if WinExist("ahk_exe Spotify.exe")
 WinActivate,
 else
-;;run "C:\Users\namph\OneDrive\Documents\Toolbar\MyApps\Spotify.lnk"
-run "C:\Users\phannt\AppData\Local\Microsoft\WindowsApps\Spotify.exe"
+run "C:\Users\namph\OneDrive\Documents\Toolbar\MyApps\Spotify.lnk"
 return 
 
 ;Teamviewer Settings [F2] -used in centering

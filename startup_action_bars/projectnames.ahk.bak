@@ -14,10 +14,6 @@ return
 Send http://jira.dematic.com/browse/S152722
 return
 
-::/bwsi4::
-Send http://jira.dematic.com/browse/S153348
-return
-
 ::/wsi::
 Send S138261
 return

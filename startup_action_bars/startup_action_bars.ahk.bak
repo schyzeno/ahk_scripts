@@ -54,7 +54,7 @@ else
 run "C:\Program Files\Mozilla Firefox\firefox.exe" "https://configure.ergodox-ez.com/"
 return
 
-#Include multi_text_clip.ahk
+;#Include multi_text_clip.ahk
 ;#Include multi_text_clip_csa.ahk
 ;#Include multi_text_clip_hmc.ahk
 ;#Include string_manipulation.ahk
